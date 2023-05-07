@@ -8,5 +8,5 @@ async fn main() -> std::io::Result<()> {
 }
 
 fn bind_port() -> TcpListener {
-    return TcpListener::bind("127.0.0.1:8080").expect("Failed to bind random port");
+    TcpListener::bind("127.0.0.1:8080").expect("Failed to bind random port")
 }
